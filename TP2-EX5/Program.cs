@@ -14,4 +14,4 @@ double tempCelsius = double.Parse(Console.ReadLine());
 double tempFahrenheit = (tempCelsius * 9 / 5) + 32;
 double tempKelvin = tempCelsius + 273.15;
 
-Console.WriteLine($"A temperatura {tempCelsius}°C corresponde a {tempFahrenheit}°F e {tempKelvin}K");
+Console.WriteLine($"A temperatura {tempCelsius:F2}°C corresponde a {tempFahrenheit:F2}°F e {tempKelvin:F2}K");
