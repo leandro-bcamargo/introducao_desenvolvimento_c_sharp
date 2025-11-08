@@ -6,6 +6,7 @@ int mes = int.Parse(Console.ReadLine());
 DateTime hoje = DateTime.Today;
 DateTime proximoAniversario = new DateTime(hoje.Year, mes, dia);
 
+// Se aniversário já passou, incrementa o ano para o próximo aniversário
 if (proximoAniversario < hoje)
 {
     proximoAniversario = proximoAniversario.AddYears(1);
