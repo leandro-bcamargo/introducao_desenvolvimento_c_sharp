@@ -21,7 +21,37 @@
     public void ExibirInformacoes()
     {
         Console.WriteLine($"Nome do show: {NomeDoShow}\n" +
-            $"Preço: {Preco}\n" +
+            $"Preço: R$ {Preco}\n" +
             $"Quantidade disponível: {QuantidadeDisponivel}");
+    }
+
+    public string GetNomeDoShow()
+    {
+        return _nomeDoShow;
+    }
+
+    public void SetNomeDoShow(string novoNome)
+    {
+        _nomeDoShow = novoNome;
+    }
+
+
+    public double GetPreco() {
+        return _preco;
+    }
+
+    public void SetPreco(double novoPreco)
+    {
+        _preco = novoPreco;
+    }
+
+    public int GetQuantidadeDisponivel()
+    {
+        return _quantidadeDisponivel;
+    } 
+
+    public void SetQuantidadeDisponivel(int novaQuantidade)
+    {
+        _quantidadeDisponivel = novaQuantidade;
     }
 }

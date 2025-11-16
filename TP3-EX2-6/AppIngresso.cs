@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace TP3_EX2
+namespace TP3_EX2_6
 {
     internal class AppIngresso
     {
@@ -19,6 +19,12 @@ namespace TP3_EX2
             ingresso.AlterarQuantidade(10000);
 
             ingresso.ExibirInformacoes();
+
+            ingresso.SetQuantidadeDisponivel(12000);
+            Console.WriteLine(ingresso.GetQuantidadeDisponivel());
+
+            ingresso.SetPreco(170);
+            Console.WriteLine(ingresso.GetPreco());
         }
     }
 }
