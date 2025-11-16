@@ -10,6 +10,7 @@
 
     public Ingresso() { }
 
+    // Criar um construtor customizado permite que o objeto tenha seus campos incializados em uma única linha, no momento de sua instanciação, em vez de depender de sucessivas chamadas de métodos setter para inicializar seus campos.
     public Ingresso(string nomeDoShow, double preco, int quantidadeDisponivel)
     {
         _nomeDoShow = nomeDoShow;
