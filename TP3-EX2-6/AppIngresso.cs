@@ -10,21 +10,26 @@ namespace TP3_EX2_6
     {
         public static void Main()
         {
-            Ingresso ingresso = new Ingresso();
-            ingresso.Preco = 100;
-            ingresso.NomeDoShow = "Ozzy";
-            ingresso.QuantidadeDisponivel = 5000;
+            Ingresso ingressoOzzy = new Ingresso();
+            ingressoOzzy.Preco = 100;
+            ingressoOzzy.NomeDoShow = "Ozzy";
+            ingressoOzzy.QuantidadeDisponivel = 5000;
 
-            ingresso.AlterarPreco(150);
-            ingresso.AlterarQuantidade(10000);
+            ingressoOzzy.AlterarPreco(150);
+            ingressoOzzy.AlterarQuantidade(10000);
 
-            ingresso.ExibirInformacoes();
+            ingressoOzzy.ExibirInformacoes();
 
-            ingresso.SetQuantidadeDisponivel(12000);
-            Console.WriteLine(ingresso.GetQuantidadeDisponivel());
+            ingressoOzzy.SetQuantidadeDisponivel(12000);
+            Console.WriteLine(ingressoOzzy.GetQuantidadeDisponivel());
 
-            ingresso.SetPreco(170);
-            Console.WriteLine(ingresso.GetPreco());
+            ingressoOzzy.SetPreco(170);
+            Console.WriteLine(ingressoOzzy.GetPreco());
+
+            Console.WriteLine("========================================");
+
+            Ingresso ingressoKiss = new Ingresso("Kiss", 130, 20000);
+            ingressoKiss.ExibirInformacoes();
         }
     }
 }

@@ -8,6 +8,15 @@
     public double Preco { get { return _preco; } set { _preco = value; } }
     public int QuantidadeDisponivel { get { return _quantidadeDisponivel;} set { _quantidadeDisponivel = value; } }
 
+    public Ingresso() { }
+
+    public Ingresso(string nomeDoShow, double preco, int quantidadeDisponivel)
+    {
+        _nomeDoShow = nomeDoShow;
+        _preco = preco;
+        _quantidadeDisponivel = quantidadeDisponivel;
+    }
+
     public void AlterarPreco(double preco)
     {
         Preco = preco;
@@ -24,6 +33,8 @@
             $"Preço: R$ {Preco}\n" +
             $"Quantidade disponível: {QuantidadeDisponivel}");
     }
+
+    // Getters e setters são úteis para fins de encapsulamento, impedindo o acesso direto de outras classes aos campos desta classe. O acesso passa a ser controlado por intermédio de métodos que podem validar se os acessos e mudanças que se quer fazer nos campos da podem ser feitos sem comprometer seu bom funcionamento.
 
     public string GetNomeDoShow()
     {
