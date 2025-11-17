@@ -17,4 +17,9 @@ namespace TP3_EX10_12
         set { _raio = value; } }
         }
 
+    public double CalcularVolume()
+        {
+            return 4 / 3 * Math.PI * Math.Pow(Raio, 3);
+        }
+
 }

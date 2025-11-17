@@ -12,5 +12,10 @@ namespace TP3_EX10_12
         private double _raio;
 
         public double Raio { get { return _raio; } set { _raio = value; } }
+
+        public double CalcularArea()
+        {
+            return Math.PI * Math.Pow(Raio, 2); 
+        }
     }
 }
