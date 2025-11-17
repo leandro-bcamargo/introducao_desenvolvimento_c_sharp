@@ -13,13 +13,15 @@ namespace TP3_EX10_12
 
         public double Raio
         {
-        get { return _raio; }
-        set { _raio = value; } }
+            get { return _raio; }
+            set { _raio = value; }
         }
 
-    public double CalcularVolume()
+
+        public double CalcularVolume()
         {
             return 4 / 3 * Math.PI * Math.Pow(Raio, 3);
         }
 
+    }
 }
